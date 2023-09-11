@@ -20,7 +20,6 @@ const fetchData = async () => {
     let data = await response.json();
     result.innerHTML = data.joke
   } catch (error) {
-    console.log(error);
     result.textContent = "An error occured";
   }
 };
